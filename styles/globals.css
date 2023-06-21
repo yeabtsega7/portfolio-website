@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --greensh: #9c8321;
+  --blue: #0d0e26;
+  --white: #fbfefc;
+  --black: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+    --greensh: #9c8321;
+    --blue: #4682b4;
+    --white: #f0f8ff;
+    --black: #000000;
+  }
+}
+@font-face {
+  font-family: "Shrikhand";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+}
+@font-face {
+  font-family: "Shrikhand";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap");
+}
+
+body {
+  font-family: "Shrikhand";
+  color: rgb(var(--foreground-rgb));
+  background: var(--white);
+}
+.font-shrikhand {
+  font-family: "shrikhand";
+}
+.font-Nova-Cut {
+  font-family: "Nova Cut";
+}
+.text-color-m {
+  color: var(--greensh);
+}
+.text-color-p {
+  color: var(--blue);
+}
+.text-color-b {
+  color: var(--black);
+}
+.text-color-w {
+  color: var(--white);
+}
+.text-hover-g:hover {
+  color: var(--greensh);
+}
+.text-hover-b:hover {
+  color: var(--blue);
+}
+.donatMenuBody {
+  display: none;
+}
+.donatMenuBody.open {
+  display: block;
+}
+
+.bg-m {
+  background: var(--greensh);
+}
+.bg-p {
+  background: var(--blue);
+}
+.bg-b {
+  background: var(--black);
+}
+.bg-w {
+  background: var(--white);
+}
+.bg-hover-g:hover {
+  background: var(--greensh);
+}
