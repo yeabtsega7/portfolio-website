@@ -52,6 +52,7 @@ const MyWorks = () => {
                 className=" relative w-full h-80   rounded-lg overflow-hidden mywork bg-white"
                 onMouseEnter={(event) => onHover(key)}
                 onMouseLeave={(event) => onHoverOut(key)}
+                key={key}
               >
                 <img src={e.img} alt="" className="w-full h-full rounded-lg " />
                 <div className=" w-full h-full hidden hover:block absolute top-0 z-10">
