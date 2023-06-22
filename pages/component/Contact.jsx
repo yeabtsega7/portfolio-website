@@ -11,7 +11,7 @@ const Contact = () => {
           Do You Any Question?
         </p>
         <p className="text-center font-Nova-Cut text-xl text-color-p mb-6">
-          I'M AT YOU SERVICE
+          I&apos;M AT YOU SERVICE
         </p>
         <div className="flex flex-wrap justify-around my-16 text-center ">
           <div className="w-1/4">
@@ -43,7 +43,7 @@ const Contact = () => {
           SEND ME AN EMAIL
         </p>
         <p className="text-center font-Nova-Cut text-xl text-color-p mb-6">
-          I'M VERY RESPOSIVE TO MESSAGES
+          I&apos;M VERY RESPOSIVE TO MESSAGES
         </p>
         <div>
           <div className="grid md:grid-cols-2 grid-cols-1 mb-6 gap-3">

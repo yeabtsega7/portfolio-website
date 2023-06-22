@@ -30,7 +30,7 @@ const About = () => {
       <div className=" container mx-auto">
         <HeadLine line={`About`} />
         <p className="capitalize text-Nova-Cut text-lg pb-6">
-          I'm Yeabtsega Gashaw and{" "}
+          I&apos;m Yeabtsega Gashaw and
           <span className="text-color-m font-bold">Web devloper</span>
         </p>
         <p className=" font-Nova-cut text-color-p font-thin text-sm px-2">
@@ -49,9 +49,12 @@ const About = () => {
         <div className="w-full grid md:grid-cols-3 gap-4 grid-cols-2 mt-10">
           <div className=" col-span-2 grid grid-cols-2 gap-2">
             <div className="">
-              {about1.map((e) => {
+              {about1.map((e, key) => {
                 return (
-                  <div className="text-color-p border-b-2 p-1 pb-3 font-Nova-Cut text-lg font-bold">
+                  <div
+                    className="text-color-p border-b-2 p-1 pb-3 font-Nova-Cut text-lg font-bold"
+                    key={key}
+                  >
                     {e.q}
                     {":  "}
                     <span className="text-gray-700 font-thin">{e.v}</span>
@@ -60,9 +63,12 @@ const About = () => {
               })}
             </div>
             <div className="">
-              {about2.map((e) => {
+              {about2.map((e, key) => {
                 return (
-                  <div className="text-color-p border-b-2 p-1 pb-3 font-Nova-Cut text-lg font-bold">
+                  <div
+                    className="text-color-p border-b-2 p-1 pb-3 font-Nova-Cut text-lg font-bold"
+                    key={key}
+                  >
                     {e.q}
                     {":  "}
                     <span className="text-gray-700 font-thin">{e.v}</span>
@@ -72,9 +78,9 @@ const About = () => {
             </div>
           </div>
           <div className=" md:col-span-1 col-span-2">
-            {programing.map((e) => {
+            {programing.map((e, key) => {
               return (
-                <div className="">
+                <div className="" key={key}>
                   <div className={`flex justify-between mb-2`}>
                     <p>{e.q}</p>{" "}
                     <p
